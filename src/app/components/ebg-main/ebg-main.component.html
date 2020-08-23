@@ -1,0 +1,68 @@
+<app-sharedheader (nextStepClicked)="goToNextStep()">
+
+    <div class="ebrightContent">
+        <div style="text-align: center">
+            <h1>Electronics Buyers Guide</h1>
+        </div>
+        <div class="col-sm-12 ebheadinglabel">
+            <label>Please Specify the following motor specifications</label>
+        </div>
+
+
+        <div class="row">
+            <form [formGroup]="ebgForm" class="form-horizontal" role="form">
+                <div class="col-md-12">
+                    <label>
+                        <span>First Name</span>
+                        <input class="form-control" type="text" formControlName="firstName" required />
+                    </label>
+
+                    <span class="form-error" *ngIf="submitted && firstNameCtrl?.errors?.required">First Name is
+                        required</span>
+
+                    <label>
+                        <span>Last Name</span>
+                        <input class="form-control" type="text" formControlName="lastName" required />
+                    </label>
+
+                    <span class="form-error" *ngIf="submitted && lastNameCtrl?.errors?.required">Last Name is
+                        required</span>
+
+                    <label>
+                        <span>Age</span>
+                        <input class="form-control" type="text" formControlName="age" required />
+                    </label>
+
+                    <span class="form-error" *ngIf="submitted && lastNameCtrl?.errors?.required">Age is
+                        Mandatory</span>
+
+
+                    <div class="form-group">
+                        <label for="name" class="col-sm-4 control-label">End Destination Country:</label>
+                        <select class="form-control" formControlName="destCountry" required>
+                            <option>Select Option</option>
+                            <option>India</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                        <span class="form-error" *ngIf="submitted && destCountryCtrl?.errors?.required">
+                            Enter Destination Country
+                        </span>
+                    </div>
+                    <!-- <div class="form-group">
+                        <label for="name" class="col-sm-4 control-label">NEMA / IEC:</label>
+                        <select class="form-control" formControlName="nema" required>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                        <span class="form-error" *ngIf="submitted && nemaCtrl?.errors?.required">
+                            Select Nema Value
+                        </span>
+                    </div> -->
+                </div>
+            </form>
+        </div>
+    </div>
+</app-sharedheader>

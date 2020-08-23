@@ -1,0 +1,42 @@
+<app-sharedheader 
+(backStepClicked)="goToBackStep()"
+ (nextStepClicked)="goToNextStep()">
+    <form [formGroup]="ebgsteptwoform">
+        <div class="form-group">
+            <label class="col-sm-4 control-label">Frequency:</label>
+            <select class="form-control" formControlName="frequency">
+                <option selected value="Select">Select</option>
+                <option value="Variable">Variable</option>
+                <option value="50">50</option>
+                <option value="60">60</option>
+            </select>
+            <span class="hzStyle">HZ</span>
+            <span class="form-error" *ngIf="submitted && frequencyCtrl?.errors?.required">
+                Select Frequency Value
+                <label class="col-sm-4 control-label">Frequency:</label>
+            </span>
+        </div>
+        <div class="form-group" *ngIf="selectedValue === 'Variable' == false ">
+            <label for="name" class="col-sm-4 control-label">Output(HP):</label>
+            <select class="form-control" formControlName="output">
+                <option>Select</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+            <span class="form-error" *ngIf="submitted && outputCtrl?.errors?.required">
+                Output is required
+            </span>
+            <select class="form-control hpSelect" formControlName="hpOutput">
+                <option>HP</option>
+                <option>2</option>
+                <option>4</option>
+            </select>
+
+            <span class="form-error" *ngIf="submitted && hpOutputCtrl?.errors?.required">
+                Hp Output is required
+            </span>
+
+        </div>
+    </form>
+</app-sharedheader>

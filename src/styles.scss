@@ -1,0 +1,353 @@
+body{ 
+    display:flex; 
+    flex-direction:column; 
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    margin: 0px;
+  }
+  .container-fluid {
+      line-height: normal;
+      height: 69px;
+  }
+  h1{
+      font-size: 1.5em;
+      font-weight: 800;
+      margin: 0px;
+      margin-bottom: 0.5em;
+  }
+  span {
+      font-size: 11px;
+      font-weight: 700;
+  }
+  .ebrightContent .container-fluid {
+      height: auto;
+  }
+  .form-control {
+      height: 20px !important;
+      padding: 1px 5px !important;
+      font-size: 12px !important;
+      margin-bottom: 0.5em;
+  }
+  .form-group {
+      margin-bottom: 0px;
+  }
+  form {
+      padding: 0 1em;
+  }
+  #sidebar ul li a {
+      color: #fff;
+  }
+  .ebgformcontainer {
+      width: 100%;
+      padding: 0px;
+      margin-bottom: 1em;
+      border-radius: 5px;
+      float: left;
+      margin-top: -7px;
+  }
+  .ebrightContent {
+      width: 50%;
+      background: #efefff;
+      border: 2px solid #0b0b7b;
+      border-radius: 5px;
+      float: left;
+      margin-left: 8em;
+      margin-top: 1em;
+  }
+  label.col-sm-4.control-label {
+      text-align: left;
+      padding-left: 2em;
+      float: left;
+      width: 45%;
+      font-size: 11px;
+      font-weight: 800;
+      font-family: 'Roboto', sans-serif;
+      padding-top: 0px;
+  }
+  .col-sm-12.ebheadinglabel {
+      margin-bottom: 0.5em;
+  }
+  a#logout {
+      border: none;
+  }
+  a#link1 img {
+      padding-right: 0.5em;
+  }
+  .form-group col-md-6 {
+      background-color: #4865af4a;
+  }
+  .col-sm-12 label {
+      width: 100%;
+      margin: 0.5em 0;
+  }
+  /*
+  label.col-sm-4.control-label.source {
+      margin-right: 2.2em;
+  }
+  .col-sm-6.ebgformleftcontainer {
+      padding-right: 0px;
+  }
+  .col-sm-6.ebgformleftcontainer label {
+      margin-right: 2em;
+  }
+  .col-sm-12.ebheadinglabel label {
+      margin: 1em 0;
+  }
+  .col-sm-6.ebgformleftcontainer select {
+      width: 45% !important;
+  }
+  .col-sm-6.ebgformrightcontainer {
+      padding-left: 0px;
+  }
+  .col-sm-6.ebgformrightcontainer span {
+      line-height: 2em;
+      font-weight: 700;
+      padding: 0.5em;
+  }
+  .col-sm-6.ebgformrightcontainer button {
+      font-size: 11px;
+      padding: 5px;
+      font-weight: bold;
+  }
+  .col-md-12.speedShowContainer label {
+      width: 21%;
+  }
+  
+  .minmaxLabels div {
+      float: left;
+      margin-left: 18%;
+  }
+  select.form-control.syncSelect {
+      min-width: 46%;
+  }
+  select.form-control.voltageSelect {
+      width: 23% !important;
+      min-width: auto !important;
+  }
+  select.form-control.sourceSlect {
+      margin-left: 0.5em;
+      width: 46% !IMPORTANT;
+  }
+  */
+  label.col-sm-4.control-label.freqqLabel {
+      width: 35%;
+  }
+  .col-div2 {
+      margin: 0px !important;
+      padding: 0px !important;
+      background: #0b0b7b;
+  }
+  select.form-control.hpSelect {
+      min-width: 10% !important;
+      margin-left: 1em;
+  }
+  .medblue {
+      font-size: 16px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: 700;
+      text-decoration: none;
+      border-right: 1px solid #fff;
+      padding: 0 0.5em;
+  }
+  .medblue:hover {
+      color: #fff;
+  }
+  img#img1 {
+      margin: 0.5em 0 0.5em 1em;
+  }
+  .col-md-12.speedShowContainer input[type=text] {
+      width: 75px;
+      height: 20px;
+      margin-top: 0.3em;
+      margin-bottom: 0.3em;
+  }
+  .headerRightContainer {
+      float: right;
+      margin: 2em 1em;
+  }
+  select {
+      width: auto !important;
+      height: 30px !important;
+      float: left;
+      min-width: 30%;
+  }
+  .ebgBtnContainer button {
+      margin-right: 1em;
+      font-weight: 700;
+      padding: 0.1em 0.7em !important;
+  }
+  .ebgBtnContainer {
+      margin-left: 2em;
+      margin-bottom: 0.5em;
+  }
+  .minmaxLabels {
+      width: 100%;
+      float: left;
+  }
+  .minmaxLabels button {
+      float: left;
+      margin-left: 1em;
+  }
+  span.min {
+      margin-left: 1em;
+  }
+  .minmaxLabels span {
+      width: 72px !important;
+      float: left;
+      line-height: 2em;
+      font-size: 12px;
+      font-weight: 700;
+  }
+  .minmaxLabels span:nth-child(2) {
+      width: 25px !important;
+      padding: 0 0.5em;
+  }
+  span.dash {
+      padding: 0 0.5em;
+  }
+  .speedShowContainer input[type="radio"] {
+      float: left;
+      margin-right: 0.5em;
+      margin-top: 1px;
+  }
+  .minmaxLabels div {
+      float: right;
+      margin-right: 1.9em;
+      width: 52%;
+  }
+  .col-md-12.frequencyNumberContainer label {
+      padding-left: 10px;
+      margin-right: 2em;
+  }
+  .col-md-12.frequencyNumberContainer select,.col-md-12.speedShowContainer {
+      margin-bottom: 1em;
+  } 
+  span.hzStyle {
+      font-weight: bold;
+      padding: 0 0.5em;
+      font-size: 11px;
+      margin-left: 0.8em;
+  }
+  input.outText {
+      height: 20px;
+  }
+  .voltageContainer {
+      float: left;
+      width: 100%;
+  }
+  label.col-sm-4.control-label.syn {
+      margin-right: 2.5em;
+  }
+  select.form-control.enclosureSelect {
+      min-width: 13% !important;
+      margin-right: 3%;
+      margin-top: 1%;
+  }
+  span.orText {
+      margin-left: 0.5em;
+  }
+  footer {
+      width: 100%;
+      display: block;
+      background: #0b0b7b;
+      line-height: 3em;
+       position: absolute;
+        bottom: 0;
+  }
+  footer p {
+      text-align: center;
+      color: #fff;
+      font-weight: 700;
+      margin-bottom: 0px;
+  }
+  
+  #sidebar {
+      background: #7386D5;
+      color: #fff;
+      transition: all 0.3s;
+      width: 15%;
+      float: left;
+  }
+  
+  #sidebar .sidebar-header {
+      padding: 20px;
+      background: #6d7fcc;
+  }
+  
+  #sidebar ul.components {
+      padding: 20px 0;
+      border-bottom: 1px solid #47748b;
+  }
+  
+  #sidebar ul p {
+      color: #fff;
+      padding: 10px;
+  }
+  
+  #sidebar ul li a {
+      padding: 10px;
+      font-size: 1.1em;
+      display: block;
+  }
+  #sidebar ul li a:hover {
+      color: #7386D5;
+      background: #fff;
+  }
+  
+  #sidebar ul li.active > a, a[aria-expanded="true"] {
+      color: #fff;
+      background: #6d7fcc;
+  }
+  ul ul a {
+      font-size: 0.9em !important;
+      padding-left: 30px !important;
+      background: #6d7fcc;
+  }
+  
+  .ebgRightSpecificationContainer {
+      float: left;
+      width: 15%;
+      font-family: 'Roboto', sans-serif;
+      margin-top: 1em;
+      margin-left: 2em;
+  }
+  .specificationRight div {
+      width: 100%;
+      float: left;
+  }
+  .ebgRightSpecificationContainer h4 {
+      margin: 0px;
+      font-weight: 600;
+      font-size: 14px;
+      width: 100%;
+      margin-bottom: 0.5em;
+  }
+  .form-group.specficRowDiv {
+      font-size: 14px;
+  }
+  .form-group.specficRowDiv span {
+      font-size: 14px;
+      float: left;
+  }
+  input.chpTxt {
+      float: left;
+      margin-right: 0.4em;
+  }
+  span.dash.chpDash {
+      float: left;
+      padding: 0px;
+      margin-top: 5px;
+      width: 10px;
+  }
+  select.form-control.chpDrop {
+      min-width: 11% !important;
+      margin-top: 5px;
+  }
+  span.orText.chpOptionalText {
+      margin-top: 7px;
+      float: left;
+  }
+  footer {
+      display: none;
+  }
